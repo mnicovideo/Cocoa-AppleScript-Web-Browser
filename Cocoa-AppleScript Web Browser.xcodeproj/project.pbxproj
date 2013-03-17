@@ -14,6 +14,15 @@
 		E2DBB40816F5895000A06AE3 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E2DBB40616F5895000A06AE3 /* Credits.rtf */; };
 		E2DBB40A16F5895000A06AE3 /* AppDelegate.applescript in Sources */ = {isa = PBXBuildFile; fileRef = E2DBB40916F5895000A06AE3 /* AppDelegate.applescript */; };
 		E2DBB40D16F5895000A06AE3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2DBB40B16F5895000A06AE3 /* MainMenu.xib */; };
+		E2DBB41816F5897500A06AE3 /* left.icns in Resources */ = {isa = PBXBuildFile; fileRef = E2DBB41416F5897500A06AE3 /* left.icns */; };
+		E2DBB41916F5897500A06AE3 /* reload.icns in Resources */ = {isa = PBXBuildFile; fileRef = E2DBB41516F5897500A06AE3 /* reload.icns */; };
+		E2DBB41A16F5897500A06AE3 /* right.icns in Resources */ = {isa = PBXBuildFile; fileRef = E2DBB41616F5897500A06AE3 /* right.icns */; };
+		E2DBB41B16F5897500A06AE3 /* stop.icns in Resources */ = {isa = PBXBuildFile; fileRef = E2DBB41716F5897500A06AE3 /* stop.icns */; };
+		E2DBB41D16F5897E00A06AE3 /* WindowDelegate.applescript in Sources */ = {isa = PBXBuildFile; fileRef = E2DBB41C16F5897E00A06AE3 /* WindowDelegate.applescript */; };
+		E2DBB42016F5898B00A06AE3 /* WebViewHelper.applescript in Sources */ = {isa = PBXBuildFile; fileRef = E2DBB41E16F5898B00A06AE3 /* WebViewHelper.applescript */; };
+		E2DBB42116F5898B00A06AE3 /* WebViewDelegate.applescript in Sources */ = {isa = PBXBuildFile; fileRef = E2DBB41F16F5898B00A06AE3 /* WebViewDelegate.applescript */; };
+		E2DBB42316F589CF00A06AE3 /* public in Resources */ = {isa = PBXBuildFile; fileRef = E2DBB42216F589CF00A06AE3 /* public */; };
+		E2DBB42516F589E700A06AE3 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2DBB42416F589E700A06AE3 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +39,15 @@
 		E2DBB40716F5895000A06AE3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		E2DBB40916F5895000A06AE3 /* AppDelegate.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = AppDelegate.applescript; sourceTree = "<group>"; };
 		E2DBB40C16F5895000A06AE3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		E2DBB41416F5897500A06AE3 /* left.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = left.icns; sourceTree = "<group>"; };
+		E2DBB41516F5897500A06AE3 /* reload.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = reload.icns; sourceTree = "<group>"; };
+		E2DBB41616F5897500A06AE3 /* right.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = right.icns; sourceTree = "<group>"; };
+		E2DBB41716F5897500A06AE3 /* stop.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = stop.icns; sourceTree = "<group>"; };
+		E2DBB41C16F5897E00A06AE3 /* WindowDelegate.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = WindowDelegate.applescript; sourceTree = "<group>"; };
+		E2DBB41E16F5898B00A06AE3 /* WebViewHelper.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = WebViewHelper.applescript; sourceTree = "<group>"; };
+		E2DBB41F16F5898B00A06AE3 /* WebViewDelegate.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = WebViewDelegate.applescript; sourceTree = "<group>"; };
+		E2DBB42216F589CF00A06AE3 /* public */ = {isa = PBXFileReference; lastKnownFileType = folder; path = public; sourceTree = "<group>"; };
+		E2DBB42416F589E700A06AE3 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2DBB42516F589E700A06AE3 /* WebKit.framework in Frameworks */,
 				E2DBB3F616F5895000A06AE3 /* Cocoa.framework in Frameworks */,
 				E2DBB3F816F5895000A06AE3 /* AppleScriptObjC.framework in Frameworks */,
 			);
@@ -48,6 +67,7 @@
 		E2DBB3E916F5895000A06AE3 = {
 			isa = PBXGroup;
 			children = (
+				E2DBB42216F589CF00A06AE3 /* public */,
 				E2DBB3FD16F5895000A06AE3 /* Cocoa-AppleScript Web Browser */,
 				E2DBB3F416F5895000A06AE3 /* Frameworks */,
 				E2DBB3F316F5895000A06AE3 /* Products */,
@@ -65,6 +85,7 @@
 		E2DBB3F416F5895000A06AE3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E2DBB42416F589E700A06AE3 /* WebKit.framework */,
 				E2DBB3F516F5895000A06AE3 /* Cocoa.framework */,
 				E2DBB3F716F5895000A06AE3 /* AppleScriptObjC.framework */,
 				E2DBB3F916F5895000A06AE3 /* Other Frameworks */,
@@ -85,7 +106,11 @@
 		E2DBB3FD16F5895000A06AE3 /* Cocoa-AppleScript Web Browser */ = {
 			isa = PBXGroup;
 			children = (
+				E2DBB41316F5897500A06AE3 /* icons */,
 				E2DBB40916F5895000A06AE3 /* AppDelegate.applescript */,
+				E2DBB41C16F5897E00A06AE3 /* WindowDelegate.applescript */,
+				E2DBB41F16F5898B00A06AE3 /* WebViewDelegate.applescript */,
+				E2DBB41E16F5898B00A06AE3 /* WebViewHelper.applescript */,
 				E2DBB40B16F5895000A06AE3 /* MainMenu.xib */,
 				E2DBB3FE16F5895000A06AE3 /* Supporting Files */,
 			);
@@ -102,6 +127,17 @@
 				E2DBB40616F5895000A06AE3 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E2DBB41316F5897500A06AE3 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				E2DBB41416F5897500A06AE3 /* left.icns */,
+				E2DBB41516F5897500A06AE3 /* reload.icns */,
+				E2DBB41616F5897500A06AE3 /* right.icns */,
+				E2DBB41716F5897500A06AE3 /* stop.icns */,
+			);
+			path = icons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +194,11 @@
 				E2DBB40216F5895000A06AE3 /* InfoPlist.strings in Resources */,
 				E2DBB40816F5895000A06AE3 /* Credits.rtf in Resources */,
 				E2DBB40D16F5895000A06AE3 /* MainMenu.xib in Resources */,
+				E2DBB41816F5897500A06AE3 /* left.icns in Resources */,
+				E2DBB41916F5897500A06AE3 /* reload.icns in Resources */,
+				E2DBB41A16F5897500A06AE3 /* right.icns in Resources */,
+				E2DBB41B16F5897500A06AE3 /* stop.icns in Resources */,
+				E2DBB42316F589CF00A06AE3 /* public in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +211,9 @@
 			files = (
 				E2DBB40416F5895000A06AE3 /* main.m in Sources */,
 				E2DBB40A16F5895000A06AE3 /* AppDelegate.applescript in Sources */,
+				E2DBB41D16F5897E00A06AE3 /* WindowDelegate.applescript in Sources */,
+				E2DBB42016F5898B00A06AE3 /* WebViewHelper.applescript in Sources */,
+				E2DBB42116F5898B00A06AE3 /* WebViewDelegate.applescript in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +307,7 @@
 		E2DBB41116F5895000A06AE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cocoa-AppleScript Web Browser/Cocoa-AppleScript Web Browser-Prefix.pch";
@@ -275,6 +320,7 @@
 		E2DBB41216F5895000A06AE3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cocoa-AppleScript Web Browser/Cocoa-AppleScript Web Browser-Prefix.pch";
