@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E2BCD06B16F88A8D00D32851 /* Path.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BCD06A16F88A8D00D32851 /* Path.m */; };
+		E2BCD06E16F8961000D32851 /* OSX.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BCD06D16F8961000D32851 /* OSX.m */; };
+		E2BCD07116F89DBD00D32851 /* App.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BCD07016F89DBD00D32851 /* App.m */; };
 		E2DBB3F616F5895000A06AE3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2DBB3F516F5895000A06AE3 /* Cocoa.framework */; };
 		E2DBB3F816F5895000A06AE3 /* AppleScriptObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2DBB3F716F5895000A06AE3 /* AppleScriptObjC.framework */; };
 		E2DBB40216F5895000A06AE3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E2DBB40016F5895000A06AE3 /* InfoPlist.strings */; };
@@ -26,6 +29,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E2BCD06916F88A8D00D32851 /* Path.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Path.h; sourceTree = "<group>"; };
+		E2BCD06A16F88A8D00D32851 /* Path.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Path.m; sourceTree = "<group>"; };
+		E2BCD06C16F8961000D32851 /* OSX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSX.h; sourceTree = "<group>"; };
+		E2BCD06D16F8961000D32851 /* OSX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSX.m; sourceTree = "<group>"; };
+		E2BCD06F16F89DBD00D32851 /* App.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = App.h; sourceTree = "<group>"; };
+		E2BCD07016F89DBD00D32851 /* App.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = App.m; sourceTree = "<group>"; };
 		E2DBB3F216F5895000A06AE3 /* Cocoa-AppleScript Web Browser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cocoa-AppleScript Web Browser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2DBB3F516F5895000A06AE3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		E2DBB3F716F5895000A06AE3 /* AppleScriptObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptObjC.framework; path = System/Library/Frameworks/AppleScriptObjC.framework; sourceTree = SDKROOT; };
@@ -64,6 +73,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E2BCD05E16F8418500D32851 /* commands */ = {
+			isa = PBXGroup;
+			children = (
+				E2BCD06F16F89DBD00D32851 /* App.h */,
+				E2BCD07016F89DBD00D32851 /* App.m */,
+				E2BCD06916F88A8D00D32851 /* Path.h */,
+				E2BCD06A16F88A8D00D32851 /* Path.m */,
+			);
+			path = commands;
+			sourceTree = "<group>";
+		};
 		E2DBB3E916F5895000A06AE3 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +126,7 @@
 		E2DBB3FD16F5895000A06AE3 /* Cocoa-AppleScript Web Browser */ = {
 			isa = PBXGroup;
 			children = (
+				E2BCD05E16F8418500D32851 /* commands */,
 				E2DBB41316F5897500A06AE3 /* icons */,
 				E2DBB40916F5895000A06AE3 /* AppDelegate.applescript */,
 				E2DBB41C16F5897E00A06AE3 /* WindowDelegate.applescript */,
@@ -113,6 +134,8 @@
 				E2DBB41E16F5898B00A06AE3 /* WebViewHelper.applescript */,
 				E2DBB40B16F5895000A06AE3 /* MainMenu.xib */,
 				E2DBB3FE16F5895000A06AE3 /* Supporting Files */,
+				E2BCD06C16F8961000D32851 /* OSX.h */,
+				E2BCD06D16F8961000D32851 /* OSX.m */,
 			);
 			path = "Cocoa-AppleScript Web Browser";
 			sourceTree = "<group>";
@@ -214,6 +237,9 @@
 				E2DBB41D16F5897E00A06AE3 /* WindowDelegate.applescript in Sources */,
 				E2DBB42016F5898B00A06AE3 /* WebViewHelper.applescript in Sources */,
 				E2DBB42116F5898B00A06AE3 /* WebViewDelegate.applescript in Sources */,
+				E2BCD06B16F88A8D00D32851 /* Path.m in Sources */,
+				E2BCD06E16F8961000D32851 /* OSX.m in Sources */,
+				E2BCD07116F89DBD00D32851 /* App.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +375,7 @@
 				E2DBB41216F5895000A06AE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
