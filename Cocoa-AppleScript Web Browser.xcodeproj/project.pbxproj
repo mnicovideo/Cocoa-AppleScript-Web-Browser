@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E20C3DAA16F9E50A000A5BEB /* OSXConsole.m in Sources */ = {isa = PBXBuildFile; fileRef = E20C3DA916F9E50A000A5BEB /* OSXConsole.m */; };
+		E20C3DAF16F9E658000A5BEB /* public in Resources */ = {isa = PBXBuildFile; fileRef = E20C3DAE16F9E657000A5BEB /* public */; };
 		E27A7FCC16F9913C00CDCA4E /* OSXWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = E27A7FCB16F9913C00CDCA4E /* OSXWindow.m */; };
 		E27A7FCF16F9A06F00CDCA4E /* OSXDock.m in Sources */ = {isa = PBXBuildFile; fileRef = E27A7FCE16F9A06F00CDCA4E /* OSXDock.m */; };
 		E27A7FD216F9A8E800CDCA4E /* OSXSound.m in Sources */ = {isa = PBXBuildFile; fileRef = E27A7FD116F9A8E800CDCA4E /* OSXSound.m */; };
@@ -32,6 +34,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E20C3DA816F9E50A000A5BEB /* OSXConsole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSXConsole.h; sourceTree = "<group>"; };
+		E20C3DA916F9E50A000A5BEB /* OSXConsole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSXConsole.m; sourceTree = "<group>"; };
+		E20C3DAE16F9E657000A5BEB /* public */ = {isa = PBXFileReference; lastKnownFileType = folder; path = public; sourceTree = "<group>"; };
 		E27A7FCA16F9913C00CDCA4E /* OSXWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSXWindow.h; sourceTree = "<group>"; };
 		E27A7FCB16F9913C00CDCA4E /* OSXWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSXWindow.m; sourceTree = "<group>"; };
 		E27A7FCD16F9A06F00CDCA4E /* OSXDock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSXDock.h; sourceTree = "<group>"; };
@@ -88,6 +93,8 @@
 			children = (
 				E2BCD06F16F89DBD00D32851 /* OSXApp.h */,
 				E2BCD07016F89DBD00D32851 /* OSXApp.m */,
+				E20C3DA816F9E50A000A5BEB /* OSXConsole.h */,
+				E20C3DA916F9E50A000A5BEB /* OSXConsole.m */,
 				E27A7FCD16F9A06F00CDCA4E /* OSXDock.h */,
 				E27A7FCE16F9A06F00CDCA4E /* OSXDock.m */,
 				E27A7FD316F9AF7800CDCA4E /* OSXNotice.h */,
@@ -105,6 +112,7 @@
 		E2DBB3E916F5895000A06AE3 = {
 			isa = PBXGroup;
 			children = (
+				E20C3DAE16F9E657000A5BEB /* public */,
 				E2DBB3FD16F5895000A06AE3 /* Cocoa-AppleScript Web Browser */,
 				E2DBB3F416F5895000A06AE3 /* Frameworks */,
 				E2DBB3F316F5895000A06AE3 /* Products */,
@@ -238,6 +246,7 @@
 				E2DBB41916F5897500A06AE3 /* reload.icns in Resources */,
 				E2DBB41A16F5897500A06AE3 /* right.icns in Resources */,
 				E2DBB41B16F5897500A06AE3 /* stop.icns in Resources */,
+				E20C3DAF16F9E658000A5BEB /* public in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +269,7 @@
 				E27A7FCF16F9A06F00CDCA4E /* OSXDock.m in Sources */,
 				E27A7FD216F9A8E800CDCA4E /* OSXSound.m in Sources */,
 				E27A7FD516F9AF7800CDCA4E /* OSXNotice.m in Sources */,
+				E20C3DAA16F9E50A000A5BEB /* OSXConsole.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

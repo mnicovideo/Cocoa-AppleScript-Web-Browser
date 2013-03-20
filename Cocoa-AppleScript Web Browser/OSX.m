@@ -3,6 +3,7 @@
 @implementation OSX
 
 @synthesize app;
+@synthesize console;
 @synthesize dock;
 @synthesize notice;
 @synthesize path;
@@ -13,6 +14,7 @@
 {
     self = [super init];
     self.app = [OSXApp new];
+    self.console = [OSXConsole new];
     self.dock = [OSXDock new];
     self.notice = [OSXNotice new];
     self.path = [OSXPath new];

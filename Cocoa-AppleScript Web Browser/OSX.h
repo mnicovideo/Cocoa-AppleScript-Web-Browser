@@ -2,6 +2,7 @@
 #import <WebKit/WebKit.h>
 
 #import "OSXApp.h"
+#import "OSXConsole.h"
 #import "OSXDock.h"
 #import "OSXNotice.h"
 #import "OSXPath.h"
@@ -12,6 +13,7 @@
 
 @property (nonatomic, retain) OSXApp *app;
 @property (nonatomic, retain) OSXDock *dock;
+@property (nonatomic, retain) OSXConsole *console;
 @property (nonatomic, retain) OSXNotice *notice;
 @property (nonatomic, retain) OSXPath *path;
 @property (nonatomic, retain) OSXSound *sound;
