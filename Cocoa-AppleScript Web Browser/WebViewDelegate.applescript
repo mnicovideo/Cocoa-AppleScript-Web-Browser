@@ -6,7 +6,6 @@
 
 script WebViewDelegate
     property parent : class "NSObject"
-    --property MacGap : class "MacGap"
     
     property locationBar : missing value
     property indicator : missing value
@@ -29,7 +28,7 @@ script WebViewDelegate
     -- === FrameLoadDelegate =========================
     
     on webView_didClearWindowObject_forFrame_(sender,windowObject,frame)
-        tell windowObject to setValue_forKey_(current application's OSX's alloc()'s init(),"OSX")
+        tell windowObject to setValue_forKey_(initWithWebView_(sender) of alloc() of current application's OSX, "OSX")
     end
     
 	on webView_didReceiveTitle_forFrame_(sender, title, frame)

@@ -1,6 +1,6 @@
-#import "App.h"
+#import "OSXApp.h"
 
-@implementation App
+@implementation OSXApp
 
 - (void) activate
 {

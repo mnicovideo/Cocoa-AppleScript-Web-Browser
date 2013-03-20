@@ -1,8 +1,8 @@
-#import "Path.h"
+#import "OSXPath.h"
 
-@implementation Path
+@implementation OSXPath
 
-//@synthesize bundle,resource;
+@synthesize bundle, resource;
 
 - (NSString *) bundle
 {

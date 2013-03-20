@@ -1,16 +1,23 @@
 #import "OSX.h"
-#import "App.h"
-#import "Path.h"
 
 @implementation OSX
 
 @synthesize app;
+@synthesize dock;
+@synthesize notice;
 @synthesize path;
+@synthesize sound;
+@synthesize window;
 
-- (OSX *)init
+- (id) initWithWebView:(WebView *) view
 {
-    self.app = [App new];
-    self.path = [Path new];
+    self = [super init];
+    self.app = [OSXApp new];
+    self.dock = [OSXDock new];
+    self.notice = [OSXNotice new];
+    self.path = [OSXPath new];
+    self.sound = [OSXSound new];
+    self.window = [[OSXWindow alloc] initWithWindow:[view window]];
     return self;
 }
 

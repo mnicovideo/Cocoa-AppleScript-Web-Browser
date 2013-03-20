@@ -3,7 +3,6 @@
 
 script WebViewHelper
     property parent : class "NSObject"
-    --property MyPath : class "MyPath"
     
     property webView : missing value
     

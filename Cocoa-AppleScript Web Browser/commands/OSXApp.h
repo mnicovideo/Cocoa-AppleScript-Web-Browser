@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 
-@interface App : NSObject
+@interface OSXApp : NSObject
 
 - (void) activate;
 - (void) terminate;

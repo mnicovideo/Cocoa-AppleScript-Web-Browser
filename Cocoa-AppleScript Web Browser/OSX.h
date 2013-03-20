@@ -1,12 +1,22 @@
 #import <Foundation/Foundation.h>
-#import "App.h"
-#import "Path.h"
+#import <WebKit/WebKit.h>
+
+#import "OSXApp.h"
+#import "OSXDock.h"
+#import "OSXNotice.h"
+#import "OSXPath.h"
+#import "OSXSound.h"
+#import "OSXWindow.h"
 
 @interface OSX : NSObject
 
-@property (nonatomic, retain) App* app;
-@property (nonatomic, retain) Path* path;
+@property (nonatomic, retain) OSXApp *app;
+@property (nonatomic, retain) OSXDock *dock;
+@property (nonatomic, retain) OSXNotice *notice;
+@property (nonatomic, retain) OSXPath *path;
+@property (nonatomic, retain) OSXSound *sound;
+@property (nonatomic, retain) OSXWindow *window;
 
-- (OSX *)init;
+- (id) initWithWebView:(WebView *) view;
 
 @end
