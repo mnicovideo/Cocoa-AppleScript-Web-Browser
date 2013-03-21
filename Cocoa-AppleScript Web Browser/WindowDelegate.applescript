@@ -8,17 +8,8 @@ script WindowDelegate
     property parent : class "NSObject"
     
     property webView : missing value
-    property status : missing value
     
     property fullScreenMode : false
-    
-    on windowWillResize_toSize_(sender,frame)
-        set windowWidth to width of |size| of frame() of sender
-        try
-            tell status to setPreferredMaxLayoutWidth_(windowWidth - 40)
-        end try
-        return frame
-    end
     
     on window_willUseFullScreenPresentationOptions_(appWindow, proposedOptions)
         --return (NSApplicationPresentationFullScreen | NSApplicationPresentationHideDock | NSApplicationPresentationAutoHideMenuBar | NSApplicationPresentationAutoHideToolbar);

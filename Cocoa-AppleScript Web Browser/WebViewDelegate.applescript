@@ -41,6 +41,8 @@ script WebViewDelegate
         set urlString to absoluteString() of |URL| of request of provisionalDataSource of frame
 		tell locationBar to setStringValue_(urlString)
         try
+            set windowWidth to width of |size| of frame() of |window| of sender
+            tell status to setPreferredMaxLayoutWidth_(windowWidth - 40)
             tell status to setStringValue_(urlString)
         end try
         try
@@ -89,6 +91,8 @@ script WebViewDelegate
         set keys to objectForKey_(current application's WebElementLinkURLKey) of elementInformation
         try
             if class of keys is current application's NSURL then
+                set windowWidth to width of |size| of frame() of |window| of sender
+                tell status to setPreferredMaxLayoutWidth_(windowWidth - 40)
                 tell status to setStringValue_(keys)
             else
                 tell status to setStringValue_("")
